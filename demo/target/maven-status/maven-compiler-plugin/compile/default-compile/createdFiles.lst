@@ -1,0 +1,7 @@
+com/dulfrey/harrystore/demo/services/BookService.class
+com/dulfrey/harrystore/demo/DemoApplication.class
+com/dulfrey/harrystore/demo/services/BookServiceImpl.class
+com/dulfrey/harrystore/demo/ServletInitializer.class
+com/dulfrey/harrystore/demo/model/repository/BookRepository.class
+com/dulfrey/harrystore/demo/model/entities/Book.class
+com/dulfrey/harrystore/demo/rest/BookController.class
