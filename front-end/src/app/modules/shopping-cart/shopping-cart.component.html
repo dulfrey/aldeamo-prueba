@@ -1,0 +1,36 @@
+<div class="list">
+<h1>Carrito de compras</h1>
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Valor unitario</th>
+        <th scope="col">Valor total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of cart ; let i =  index">
+        <th scope="row"><button (click)="removeBook(i)" class="btn btn-danger btn-sm">Eliminar</button></th>
+        <td>{{item.book.name}}</td>
+        <td>{{item.value}}</td>
+        <td>$ {{item.book.price}}</td>
+        <td>$ {{item.book.price * item.value}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <h2>
+    Valor total de la compra : $ {{totalPrice}}
+  </h2>
+  
+  <br>
+  <button (click)="cancel()" class="btn btn-danger btn-sm">Cancelar compra</button>
+  <span> -
+  </span>
+  <button (click)="buy()" class="btn btn-primary btn-sm">Confirmar compra</button>
+</div>
+
+
+
